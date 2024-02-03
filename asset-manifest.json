@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/memegenarator/static/css/main.24e52699.css",
+    "main.js": "/memegenarator/static/js/main.d055e4ae.js",
+    "index.html": "/memegenarator/index.html",
+    "main.24e52699.css.map": "/memegenarator/static/css/main.24e52699.css.map",
+    "main.d055e4ae.js.map": "/memegenarator/static/js/main.d055e4ae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24e52699.css",
+    "static/js/main.d055e4ae.js"
+  ]
+}
