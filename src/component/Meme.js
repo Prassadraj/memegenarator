@@ -3,13 +3,15 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import MemeData  from "../MemeData";
 
 export default function Meme(){
+    let [memeImage,setmemeImage]=React.useState("")
     let url;
-    function getdata(e){
+    function getMemeImage(e){
         e.preventDefault()
         let memeArray=MemeData.data.memes
         let randomNumber=Math.floor(Math.random()*memeArray.length)
         url=memeArray[randomNumber].url
-        console.log(url);
+        setmemeImage(url)
+        // console.log(url);
     }
     
 
@@ -31,8 +33,8 @@ export default function Meme(){
             </div> 
         </main>
    
-            <button id="btn" onClick={getdata} className="btn btn-success">Get a New Meme Image</button>
-            
+            <button id="btn" onClick={getMemeImage} className="btn btn-success">Get a New Meme Image</button>
+            <img id="memeImg" src={memeImage} alt="Meme Generator"  />
         </div>
     )
 }
