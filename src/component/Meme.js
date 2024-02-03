@@ -34,7 +34,7 @@ export default function Meme(){
         </main>
    
             <button id="btn" onClick={getMemeImage} className="btn btn-success">Get a New Meme Image</button>
-            <img id="memeImg" src={memeImage} alt="Meme Generator"  />
+            <img id="memeImg" src={memeImage}   />
         </div>
     )
 }
