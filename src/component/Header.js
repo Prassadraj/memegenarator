@@ -9,7 +9,7 @@ export default function App() {
         <h2>Meme Generator</h2>
       </div>
       <div className="text-right">
-        <span>React Course ~ Project 3</span>
+        <span>React Course ~ Project 4</span>
       </div>
 
      
