@@ -12,15 +12,30 @@ export default function Meme(){
         }  
     )
     let [allmemeImage,setallImage]=useState("")
+
     function getMemeImage(e){
         e.preventDefault()
         let memeArray=MemeData.data.memes
         let randomNumber=Math.floor(Math.random()*memeArray.length)
         url=memeArray[randomNumber].url
-        setmeme(url)
+        setmeme(preview=>{
+            return{
+                ...preview,
+                randomImage:url
+            }
+        })
         // console.log(url);
     }
-    
+    function handler(event){
+        const {value,name}=event.target
+        setmeme(preview=>{
+            return{
+                ...preview,
+                [name]:value
+            }
+        })
+    }
+    console.log(meme);
 
 
     return(
@@ -30,18 +45,31 @@ export default function Meme(){
                 <p>
                     Top Text
                 </p>
-                <input type="text"/>
+                <input type="text"
+                name="toptext"
+                value={meme.toptext}
+                onChange={handler}
+                />
             </div>
             <div className="rightMain">
                 <p>
                     Bottom Text
                 </p>
-                <input type="text"/>
+                <input type="text"
+                name="bottomtext"
+                value={meme.bottomtext}
+                onChange={handler}
+                />
             </div> 
         </main>
-   
+        
             <button id="btn" onClick={getMemeImage} className="btn btn-success">Get a New Meme Image</button>
-            <img id="memeImg" src={meme.randomImage}   />
+            <div className="memebox">
+            <img id="memeImg" src={meme.randomImage}/>
+            <h2 className="textTop">{meme.toptext}</h2>
+            <h2 className="textbottom">{meme.bottomtext}</h2>
+            </div>
+
         </div>
     )
 }
