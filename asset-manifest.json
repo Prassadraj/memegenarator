@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/memegenarator/static/css/main.f42fa153.css",
-    "main.js": "/memegenarator/static/js/main.9d5fc7f5.js",
+    "main.js": "/memegenarator/static/js/main.4be71603.js",
     "index.html": "/memegenarator/index.html",
     "main.f42fa153.css.map": "/memegenarator/static/css/main.f42fa153.css.map",
-    "main.9d5fc7f5.js.map": "/memegenarator/static/js/main.9d5fc7f5.js.map"
+    "main.4be71603.js.map": "/memegenarator/static/js/main.4be71603.js.map"
   },
   "entrypoints": [
     "static/css/main.f42fa153.css",
-    "static/js/main.9d5fc7f5.js"
+    "static/js/main.4be71603.js"
   ]
 }
