@@ -48,7 +48,7 @@ export default function Meme(){
         <main>
             <div className="leftMain">
                 <p>
-                    Top Text
+                    Top Text..
                 </p>
                 <input type="text"
                 name="toptext"
@@ -58,7 +58,7 @@ export default function Meme(){
             </div>
             <div className="rightMain">
                 <p>
-                    Bottom Text
+                    Bottom Text..
                 </p>
                 <input type="text"
                 name="bottomtext"
